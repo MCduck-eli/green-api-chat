@@ -1,75 +1,52 @@
-# React + TypeScript + Vite
+# React Chat Application (GREEN-API)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🇷🇺 О проекте
+Простой и удобный веб-интерфейс для отправки и получения текстовых сообщений с использованием **GREEN-API**. Проект разработан на React и TypeScript по аналогии с веб-версией мессенджера.
 
-Currently, two official plugins are available:
+#### 🛠 Используемые технологии
+* **React (Vite)** — фронтенд фреймворк
+* **TypeScript** — типизация
+* **Tailwind CSS** — стилизация интерфейса
+* **Axios** — HTTP-запросы к GREEN-API
+* **Zustand** — управление состоянием (авторизация)
+* **LocalStorage** — сохранение сессии и истории чата
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+#### 🚀 Как запустить проект локально?
 
-## React Compiler
+1. **Клонируйте репозиторий:**
+   ```bash
+   git clone [https://github.com/MCduck-eli/green-api-chat.git](https://github.com/MCduck-eli/green-api-chat.git)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+   npm install
 
-## Expanding the ESLint configuration
+   npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+   🇺🇸 About the Project
+A simple and user-friendly web interface for sending and receiving text messages using GREEN-API. Built with React and TypeScript, inspired by the web version of the messenger.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🛠 Tech Stack
+React (Vite) — Frontend framework
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+TypeScript — Type safety
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Tailwind CSS — Styling
 
-```
+Axios — HTTP client for GREEN-API
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Zustand — State management
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+LocalStorage — Session & chat persistence
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+🚀 How to Run Locally?
+Clone the repository:
 
-```
+Bash
+git clone [https://github.com/MCduck-eli/green-api-chat.git](https://github.com/MCduck-eli/green-api-chat.git)
+Install dependencies:
+
+Bash
+npm install
+Run the development server:
+
+Bash
+npm run dev
